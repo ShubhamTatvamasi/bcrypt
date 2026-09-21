@@ -2,7 +2,7 @@
 
 Generate a strong password:
 ```bash
-PASSWORD="$(openssl rand -base64 32)"
+PASSWORD="$(openssl rand -base64 48 | tr -dc 'A-Za-z0-9' | head -c 32)"
 ```
 
 Get the password value:
