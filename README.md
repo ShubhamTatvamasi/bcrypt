@@ -1,6 +1,6 @@
 # bcrypt
 
-Generate a strong password:
+Generate a strong 32 characters password:
 ```bash
 PASSWORD="$(openssl rand -base64 48 | tr -dc 'A-Za-z0-9' | head -c 32)"
 ```
