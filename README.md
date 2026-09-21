@@ -12,7 +12,7 @@ echo "$PASSWORD"
 
 bcrypt cost factor range `4 - 31`
 
-Generate bcrypt hash with cost factor of `31`:
+Generate bcrypt hash with cost factor of `15`:
 ```bash
-htpasswd -bnBC 31 "" "$PASSWORD" | tr -d ':\n'; echo
+htpasswd -bnBC 15 "" "$PASSWORD" | tr -d ':\n'; echo
 ```
