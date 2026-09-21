@@ -10,8 +10,8 @@ Get the password value:
 echo "$PASSWORD"
 ```
 
-Generate bcrypt hash with cost factor 100:
+Generate bcrypt hash with cost factor 31:
 ```bash
-htpasswd -bnBC 100 "" "$PASSWORD" | tr -d ':\n'; echo
+htpasswd -bnBC 31 "" "$PASSWORD" | tr -d ':\n'; echo
 ```
 
