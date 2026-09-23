@@ -1,5 +1,24 @@
 # cost-factor
 
+### Recommended range
+
+For a modern application:
+
+|   Cost | Recommendation                                                        |
+| -----: | --------------------------------------------------------------------- |
+|     10 | Acceptable for compatibility, but not my first choice for new systems |
+|     11 | Reasonable                                                            |
+| **12** | ⭐ Good general default                                                |
+| **13** | ⭐ Strong practical choice                                             |
+| **14** | ⭐ Strong if login frequency is low                                    |
+|     15 | Consider if benchmark supports it                                     |
+|     16 | Only with careful benchmarking                                        |
+|  17–20 | Usually unnecessarily expensive                                       |
+|  21–30 | Generally impractical                                                 |
+|     31 | ❌ Don't use                                                           |
+
+---
+
 ### Full cost-factor table
 
 |   Cost |       Work factor | Relative to Cost 10 | Relative to Cost 12 | Practical use            |
