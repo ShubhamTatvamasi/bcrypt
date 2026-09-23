@@ -1,5 +1,25 @@
 # cost-factor
 
+### Hashing vs verification
+
+The cost applies to **both** operations.
+
+```
+                    bcrypt
+                      │
+          ┌───────────┴───────────┐
+          ↓                       ↓
+      Create hash            Verify password
+          │                       │
+       cost 13                 cost 13
+          │                       │
+          └────── same work ──────┘
+```
+
+So if bcrypt cost 14 takes ~1 second on your server, a password verification will also require roughly that amount of computational work.
+
+---
+
 ### Recommended range
 
 For a modern application:
